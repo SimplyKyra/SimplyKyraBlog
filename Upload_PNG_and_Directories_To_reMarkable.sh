@@ -91,6 +91,3 @@ done
 # Use -e so it sees the new line characters and encircle $jsonString in quotes so it sees the spaces. Ignores the tab otherwise. 
 echo -e "$jsonString" > myJSONsnippet.txt
 echo -e "$jsonString" | pbcopy
-
-
-
