@@ -21,7 +21,7 @@ File: [compress_my_images.sh](compress_my_images.sh)
 Input: Path to the folder containing the images you want to batch resize and compress. If there's 
 spaces in the path surround this with double quotes.
 
-More information: I wrote a [blog post (goes live on March 10th, 2021)](https://wp.me/p9gQU5-3pf) that 
+More information: I wrote a [blog post](https://www.simplykyra.com/2021/03/10/use-a-simple-bash-script-to-resize-your-images-quickly-and-easily/) that 
 goes into this script in more detail. Specifically it goes over the script's requirements, input, 
 what it does, how you run it, and explains the code, mostly, line by line. If you want more background
 information on ImageMagick I [previously posted](https://www.simplykyra.com/2021/01/27/easily-resize-multiple-images-quickly-through-the-terminal-on-your-mac/)
