@@ -35,6 +35,7 @@ fi
 
 ##### Upload the PNG files to the reMarkable #####
 
+# Creates, informs, and executes a command to compress the directories and their image files. 
 declare compressCommand="find . -maxdepth 1 -mindepth 1 -type d -exec tar cfz $archiveName {} +"
 echo "Compressing the directories and files within using this command: $compressCommand"
 eval "$compressCommand"
