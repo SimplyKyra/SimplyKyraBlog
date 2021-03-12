@@ -2,8 +2,8 @@
 
 ##### Variables Used #####
 
-# How do you connect to you're reMarkable. I use a shortcut so I do "ssh remarkable". Another way might be "ssh root@IPaddress"
-# Leave off the ssh so in my case it would just be "remarkable". 
+# How do you connect to your reMarkable? I use a shortcut so I do "ssh remarkable". Another way might be "ssh root@IPaddress"
+# Since I used ssh below you should leave it off now so in my case it would just be "remarkable".
 declare sshReMarkable="remarkable"
 
 # Name of the temporary tar ball that's created
@@ -11,7 +11,7 @@ declare archiveName="archivedTemplates.tgz"
 
 ##### Error Checking #####
 
-# Checks if there's any directories in the current directory and saves them for here and further down. 
+# Checks if there's any directories in the current directory
 declare currDirectories=$(find . -maxdepth 1 -mindepth 1 -type d)
 # If there aren't any directories it issues a message and exits the program
 if [ -z "$currDirectories" ]; then
@@ -34,15 +34,7 @@ fi
 
 ##### Upload the PNG files to the reMarkable #####
 
-# Empty string to store the directory names we need to create the tarball from 
-declare directoryString=""
-
-# Goes through the current directories and stores their names, with minor formating, to the $directoryString variable.
-for f in $currDirectories; do  
-  directoryString="$directoryString -name $(basename $f) -o"
-done
-
-declare compressCommand="find . -maxdepth 1 -mindepth 1 -type d \(${directoryString%??}\) -exec tar cfz $archiveName {} +"
+declare compressCommand="find . -maxdepth 1 -mindepth 1 -type d -exec tar cfz $archiveName {} +"
 echo "Compressing the directories and files within using this command: $compressCommand"
 eval "$compressCommand"
 
