@@ -80,7 +80,8 @@ for f in $(find . -iname "*.PNG" | sort); do
   jsonString="$jsonString\n    }"
 done
 
-# Outputs the text to a new file named "myJSONsnippet.txt so you can use the JSON snippet at your leisure. 
-echo -e "$jsonString" > myJSONsnippet.txt
-# Also sends the snippet to your clipboard so you can paste it in right away without needing to open the file.
-echo -e "$jsonString" | pbcopy
+# I want to output the text to two places: 
+#     * a text file called myJSONsnippet.txt so you can use the JSON snippet at your leisure 
+#     * your clipboard so you can paste it in right away without needing to open the file
+# I use tee to do both in one command.
+echo -e "$jsonString" | tee myJSONsnippet.txt | pbcopy
