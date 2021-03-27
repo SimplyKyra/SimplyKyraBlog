@@ -38,10 +38,10 @@ fi
 # Creates, informs, and executes a command to compress the directories and their image files. 
 declare compressCommand="find . -maxdepth 1 -mindepth 1 -type d -exec tar cfz $archiveName {} +"
 echo "Compressing the directories and files within using this command: $compressCommand"
-eval "$compressCommand"
+$compressCommand
 
 # Uploads the created tarball to the reMarkable's templates directory. 
-eval "scp $archiveName $sshReMarkable:/usr/share/remarkable/templates/"
+scp $archiveName $sshReMarkable:/usr/share/remarkable/templates/
 
 # Creating a command that will ssh into the reMarkable, navigate to the templates folder, extract the tarball, and remove it. 
 # In case it doesn't perform correctly I output the command to you before executing it.
