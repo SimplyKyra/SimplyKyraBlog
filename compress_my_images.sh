@@ -39,11 +39,12 @@ mogrify -path output -resize 750 -quality 100% -define jpeg:extent=70KB *.JPEG 2
 # Moves to be with the newly created folders so they can be renamed
 cd output
 
-# Removes the Pinterest (wrong size), Instagram (unneeded) images, and any images ending with 'original' as that shows there's an updated blurred image for the blog.
+# Removes the Pinterest (wrong size), Instagram (unneeded) images, any images ending with 'original' as that shows there's an updated blurred image for the blog, anything that says to ignore, and any image used in a collage.
 find . -name "*original*" -delete
 find . -name "*ignore*" -delete
 find . -name "*interest*" -delete
 find . -name "*nstagram*" -delete
+find . -name "collage_*" -delete
 
 # Adds the text compressed_ before all the filenames
 find * -exec mv {} "compressed_{}" \;
