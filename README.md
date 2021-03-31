@@ -54,3 +54,7 @@ the program lives in. This directory becomes the templates's category so if you 
 your reMarkable you'll want it to have the same name. If the image is in the same directory as the script
 the category will be assigned `.`
 * Your file names don't contain an extra period as I use a period to remove the extension from the filename.
+
+More information: I wrote two blog posts that go into this script in more detail if you're interested. One was just posted and the other will post next week. 
+* [Quickly Generate a JSON Template Code Snippet for Your reMarkable](https://www.simplykyra.com/2021/03/31/quickly-generate-a-json-template-code-snippet-for-your-remarkable/) - goes over the directory and image organization I use along with the last half of the script that generates the JSON snippet. 
+* Quickly and Easily Upload Template Images to Your reMarkable (Will link when it posts) - goes over the first half of the script that compresses the images and uploads it to your reMarkable.
