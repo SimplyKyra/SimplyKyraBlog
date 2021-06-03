@@ -73,7 +73,7 @@ for f in $(find . -iname "*.PNG" | sort); do
   declare directoryName=$(basename $(dirname $f));
   jsonString="$jsonString\n      \"filename\": \"$directoryName/$(basename $f  | cut -f 1 -d '.')\","
   jsonString="$jsonString\n      \"iconCode\": \"\ue9d8\","
-  jsonString="$jsonString\n      \"landscape\": \"false\","
+  jsonString="$jsonString\n      \"landscape\": false,"
   jsonString="$jsonString\n      \"categories\": ["
   jsonString="$jsonString\n        \"${directoryName//-/ }\""
   jsonString="$jsonString\n      ]"
