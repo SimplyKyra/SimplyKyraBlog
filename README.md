@@ -36,6 +36,7 @@ here are my previous posts:
 * [Learn How to Access Your reMarkable Through the Command Line](https://www.simplykyra.com/2021/02/03/learn-how-to-access-your-remarkable-through-the-command-line/)
 * [Switch Out Your reMarkable’s Sleep Screen… Plus Easily Back it Up](https://www.simplykyra.com/2021/02/10/switch-out-your-remarkables-sleep-screen-plus-easily-back-it-up/)
 * [How to Make Template Files for Your reMarkable](https://www.simplykyra.com/2021/02/24/how-to-make-template-files-for-your-remarkable/)
+* [My reMarkable2 Updated! This Is What I Did Next] (https://www.simplykyra.com/2021/04/14/my-remarkable2-updated-this-is-what-i-did-next/)
 
 ### Upload PNG Images to the reMarkable and Generate Accompanying JSON Snippet
 
