@@ -27,6 +27,18 @@ what it does, how you run it, and explains the code, mostly, line by line. If yo
 information on ImageMagick I [previously posted](https://www.simplykyra.com/2021/01/27/easily-resize-multiple-images-quickly-through-the-terminal-on-your-mac/)
 how I use it to resize and compress one or more images at once. 
 
+### Batch Resize, Compress, and Apply Watermark to Images
+
+Just created a script that uses mogrify to compress the image and renames each file like above. It also applies a watermark to each image so you're left with compressed and watermarked images when you run the script. As they're created in a temporary directory and renamed before returned you'll be left with both the original and newly created files. I created the script in two different formats and uploaded both so you can choose which one you want depending how you feel. When I get a chance I'll write a post going over them so if you have any questions let me know. I'll link to the posts when they go live. That said the scripts are:
+
+With arguments: [compress_and_watermark_image_with_arguments.sh](compress_and_watermark_image_with_arguments.sh)
+
+Input: There are two arguments. The first is the pathway to the directory that you want the script to execute within. The second is the relative pathway and filename of the PNG image that you want to use to watermark all the images in the previous directory. 
+
+Without arguments: [compress_and_watermark_my_images.sh](compress_and_watermark_my_images.sh)
+
+There is no input but there are hardcoded variables that you may want to change. Most are at the top of the file but there is one line further down you may want to update. There's a comment with the line number you'll want to look at along with the other hardcoded variables at the top. Basically you'll want to run this script in the directory you want it to execute on. I made it so I can execute this file from anywhere as I wanted the freedom of running it from different spots. As such the absolute pathway of the watermark PNG file is hardcoded within. If you want to use arguments there's the previous file. I first wrote the one with the arguments and then changed it to work this way. As such some locations in the script have been streamlined.
+
 ## reMarkable ##
 
 Back at the end of 2020 I came across the reMarkable2 paper tablet and received it in January 2021. 
