@@ -39,6 +39,8 @@ Without arguments: [compress_and_watermark_my_images.sh](compress_and_watermark_
 
 There is no input but there are hardcoded variables that you may want to change. Most are at the top of the file but there is one line further down you may want to update. There's a comment with the line number you'll want to look at along with the other hardcoded variables at the top. Basically you'll want to run this script in the directory you want it to execute on. I made it so I can execute this file from anywhere as I wanted the freedom of running it from different spots. As such the absolute pathway of the watermark PNG file is hardcoded within. If you want to use arguments there's the previous file. I first wrote the one with the arguments and then changed it to work this way. As such some locations in the script have been streamlined.
 
+And one final one. This one takes the idea of the one above with no arguments and allows the ability to compress some images without watermarks. It's found at [compress_watermark_ignore_images.sh](compress_watermark_ignore_images.sh)
+
 ## reMarkable ##
 
 Back at the end of 2020 I came across the reMarkable2 paper tablet and received it in January 2021. 
