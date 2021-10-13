@@ -10,7 +10,8 @@ watermark="/Users/kyra/Development/SimplyKyraBlog/Watermark.png"
 imgTypes=( "*.JPG" "*.jpg" "*.PNG" "*.png" "*.jpeg" "*.JPEG" )
 # Temporary directory we work in. Will be deleted when done.
 tempDirectory="transitoryDirectory"
-# Go to line 55 to alter the text in the image files that will be ignored (deleted). 
+# Go to line 56 to alter the text in the image files that will be ignored (deleted). 
+# Go to line 74 to select which images will be compressed without a watermark. Included these in the above one (line 56) as well. 
 
 ## Checks before running
 # Confirm that there are no arguments
