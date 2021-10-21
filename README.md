@@ -73,3 +73,11 @@ the category will be assigned `.`
 More information: I wrote two blog posts that go into this script in more detail if you're interested.  
 * [Quickly Generate a JSON Template Code Snippet for Your reMarkable](https://www.simplykyra.com/2021/03/31/quickly-generate-a-json-template-code-snippet-for-your-remarkable/) - goes over the directory and image organization I use along with the last half of the script that generates the JSON snippet. 
 * [Quickly and Easily Upload Template Images to Your reMarkable](https://www.simplykyra.com/2021/04/07/quickly-and-easily-upload-template-images-to-your-remarkable/) - goes over the first half of the script that compresses the images and uploads it to your reMarkable.
+
+### Backup Your reMarkable's Files in One Easy to Execute Script
+
+Created a quick script that sits in my reMarkable backup directory on my computer. Before running it you'll need to enter your IP address on line 5. When run it creates a directory, dated by name, and backups all the files needed. I haven't had a chance to blog about it yet but figured I'd share right away in case useful. 
+
+File: [backupRemarkable.sh](backupRemarkable.sh)
+
+Input: Nothing. Although it uses the current directory to run in so you'll want it to live where you want it to run.
