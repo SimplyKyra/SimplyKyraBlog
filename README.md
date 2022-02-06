@@ -81,3 +81,11 @@ Created a quick script that sits in my reMarkable backup directory on my compute
 File: [backupRemarkable.sh](backupRemarkable.sh)
 
 Input: Nothing. Although it uses the current directory to run in so you'll want it to live where you want it to run.
+
+## SwiftUI Examples ##
+
+I created an example of a custom picker that allows for multi-selection. If you're creating a new project to demo it this file would replace your ContentView.swift. It has a main body that checks if you're running on macOS or iOS and runs the proper view. The macOS view shows a button that opens the multi-selection view via a button. The iOS view also opens the multi-selection view but does it through a NavigationLink. As it's for iOS I included sections. Both views show a simple text output to display the selected text. Also both views work on the other device so you can switch them depending what you prefer.
+
+File: [CustomMultiSelectionPicker.swift](CustomMultiSelectionPicker.swift)
+
+Will add a link for more information when I get a blog post going. 
