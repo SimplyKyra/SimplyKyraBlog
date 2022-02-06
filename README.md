@@ -16,7 +16,7 @@ file containing the substring "nterest" it specifically resizes it to 471 pixels
 it. I've commented the code so you can easily copy this to your device and use it as a starting 
 spot for what you want to use it for. 
 
-File: [compress_my_images.sh](compress_my_images.sh)
+File: [compress_my_images.sh](BloggingHelp/compress_my_images.sh)
 
 Input: Path to the folder containing the images you want to batch resize and compress. If there's 
 spaces in the path surround this with double quotes.
@@ -31,15 +31,15 @@ how I use it to resize and compress one or more images at once.
 
 Just created a script that uses mogrify to compress the image and renames each file like above. It also applies a watermark to each image so you're left with compressed and watermarked images when you run the script. As they're created in a temporary directory and renamed before returned you'll be left with both the original and newly created files. I created the script in two different formats and uploaded both so you can choose which one you want depending how you feel. When I get a chance I'll write a post going over them so if you have any questions let me know. I'll link to the posts when they go live. That said the scripts are:
 
-With arguments: [compress_and_watermark_image_with_arguments.sh](compress_and_watermark_image_with_arguments.sh)
+With arguments: [compress_and_watermark_image_with_arguments.sh](BloggingHelp/compress_and_watermark_image_with_arguments.sh)
 
 Input: There are two arguments. The first is the pathway to the directory that you want the script to execute within. The second is the relative pathway and filename of the PNG image that you want to use to watermark all the images in the previous directory. 
 
-Without arguments: [compress_and_watermark_my_images.sh](compress_and_watermark_my_images.sh)
+Without arguments: [compress_and_watermark_my_images.sh](BloggingHelp/compress_and_watermark_my_images.sh)
 
 There is no input but there are hardcoded variables that you may want to change. Most are at the top of the file but there is one line further down you may want to update. There's a comment with the line number you'll want to look at along with the other hardcoded variables at the top. Basically you'll want to run this script in the directory you want it to execute on. I made it so I can execute this file from anywhere as I wanted the freedom of running it from different spots. As such the absolute pathway of the watermark PNG file is hardcoded within. If you want to use arguments there's the previous file. I first wrote the one with the arguments and then changed it to work this way. As such some locations in the script have been streamlined.
 
-And one final one. This one takes the idea of the one above with no arguments and allows the ability to compress some images without watermarks. It's found at [compress_watermark_ignore_images.sh](compress_watermark_ignore_images.sh)
+And one final one. This one takes the idea of the one above with no arguments and allows the ability to compress some images without watermarks. It's found at [compress_watermark_ignore_images.sh](BloggingHelp/compress_watermark_ignore_images.sh)
 
 ## reMarkable ##
 
@@ -59,7 +59,7 @@ templates.json file slowly? I was too so I created a script that looks at the cu
 compresses all the directories and their contents, uploads it to your reMarkable, extracts it, generates
 the code snippet you'll need for the JSON file, and cleans up after itself. 
 
-File: [Upload_PNG_and_Directories_To_reMarkable.sh](Upload_PNG_and_Directories_To_reMarkable.sh)
+File: [Upload_PNG_and_Directories_To_reMarkable.sh](reMarkable/Upload_PNG_and_Directories_To_reMarkable.sh)
 
 Input: Nothing. Although it uses the current directory to run in so you'll want it to live where you want it to run.
 
@@ -78,7 +78,7 @@ More information: I wrote two blog posts that go into this script in more detail
 
 Created a quick script that sits in my reMarkable backup directory on my computer. Before running it you'll need to enter your IP address on line 5. When run it creates a directory, dated by name, and backups all the files needed. I haven't had a chance to blog about it yet but figured I'd share right away in case useful. 
 
-File: [backupRemarkable.sh](backupRemarkable.sh)
+File: [backupRemarkable.sh](reMarkable/backupRemarkable.sh)
 
 Input: Nothing. Although it uses the current directory to run in so you'll want it to live where you want it to run.
 
@@ -86,6 +86,6 @@ Input: Nothing. Although it uses the current directory to run in so you'll want 
 
 I created an example of a custom picker that allows for multi-selection. If you're creating a new project to demo it this file would replace your ContentView.swift. It has a main body that checks if you're running on macOS or iOS and runs the proper view. The macOS view shows a button that opens the multi-selection view via a button. The iOS view also opens the multi-selection view but does it through a NavigationLink. As it's for iOS I included sections. Both views show a simple text output to display the selected text. Also both views work on the other device so you can switch them depending what you prefer.
 
-File: [CustomMultiSelectionPicker.swift](CustomMultiSelectionPicker.swift)
+File: [CustomMultiSelectionPicker.swift](SwiftExamples/CustomMultiSelectionPicker.swift)
 
 Will add a link for more information when I get a blog post going. 
