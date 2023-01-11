@@ -6,12 +6,6 @@
 if [ $# -ne 1 ]; then
     echo "Please call this script with one argument - the image file you want to resize."
     exit 1
-elif [ ! -e "$PWD" ]; then
-    echo "Directory doesn't exist. Please pass in a valid directory you want the program to run in for the first argument." 
-    exit 1
-elif [ ! -d "$PWD" ]; then
-    echo "That isn't a directory. Please pass in a valid directory for the program to run in."
-    exit 1 
 fi
 
 echo -e "\nWorking in directory: $PWD\nWorking on file: $1\n"
