@@ -60,8 +60,10 @@ mogrify -auto-orient -path . -resize 750 -quality 100% -define jpeg:extent=70KB 
 # Add the watermark to these images and rename the resulting file by adding "compressed_" to the front of it
 find * -exec composite -compose atop -gravity southeast -background none $watermark {} "compressed_{}" \;
 
-# Moves all the images up two folders and removes the temporary directories and images
-mv * ..
+# Moves the newly compressed screen shot images up a directory
+find * -exec mv {} "../compressed_{}" \;
+
+# Moves up to join the files and deletes the temporary directory with the newly made images
 cd ..
 rm -rf $tempDirectory
 
