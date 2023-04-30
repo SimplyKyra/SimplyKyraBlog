@@ -2,7 +2,6 @@
 
 # Run as: ./createAppIcons.sh
 # Assumes you are running the script where you want it to execute.
-# Confirm the proper argument was given; otherwise a blank argument would send you to the home directory
 if [ $# -ne 1 ]; then
     echo "Please call this script with one argument - the image file you want to resize."
     exit 1
