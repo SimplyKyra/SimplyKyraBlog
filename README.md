@@ -1,6 +1,11 @@
 # SimplyKyraBlog
 Bits of code that I'm sharing with the world to hopefully make your life a little easier!
 
+## General
+
+In case you want to run these bash commands from anywhere on your computer, rather than just where 
+it lives, I created [this blog post](https://www.simplykyra.com/how-to-run-a-bash-script-from-anywhere-on-your-apple-computer/) to explain the process.
+
 ## Blogging Help
 
 Any scripts that help me while going through my blogging related tasks.
