@@ -26,7 +26,7 @@ struct ContentView: View {
             Text("Email might be more complicated as the action url includes \"mailto:\" and optional add-ons like the subject so you may want to overwrite the copy text like this:")
             
             DisplayLinkAndCopy(
-                url: URL(string: "mailto:hello@example.com")!,
+                url: URL(string: "mailto:\(emailString)")!,
                 copyString: emailString,
                 captionString: "Mail Me Here!"
             )
