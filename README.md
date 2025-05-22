@@ -94,3 +94,7 @@ I created an example of a custom picker that allows for multi-selection. If you'
 File: [CustomMultiSelectionPicker.swift](SwiftExamples/CustomMultiSelectionPicker.swift)
 
 If you want to have the list of items include an image (or something else) I've updated the previous example to use a customizable struct. The code can be found at [CustomMultiSelectionExampleWithImages](SwiftExamples/CustomMultiSelectionExampleWithImages). The related blog post can be found [here](https://www.simplykyra.com/update-to-my-custom-picker-with-multi-selection-in-swiftui-now-with-images/).
+
+I also created a Link view that includes the link and a copy button so anyone using my app can choose to copy the URL or go through the link. The full blog post can be found here: [How I Handle External Links in My iOS App with a Built-In Copy Option](https://www.simplykyra.com/blog/how-i-handle-external-links-in-my-ios-app-with-a-built-in-copy-option/)
+
+File: [DisplayLinkAndCopyViews.swift](https://github.com/SimplyKyra/SimplyKyraBlog/blob/main/SwiftExamples/DisplayLinkAndCopyViews.swift)
